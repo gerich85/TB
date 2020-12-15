@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+	padding: 0;
+  font-family: roboto;
+  background: #0b192f;
+}
+
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #162b4d;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+}
+
+header article{
+  padding-left: 30px;
+  flex: 2;
+  color: white;
+  font-size: 50px;
+}
+
+.blog{
+  color: rgba(3, 3, 54, 0.877)
+}
+
+.animation {
+  align-self: flex-end;
+    width: 60px;
+    height: 60px;
+    color: #0b192f;
+    border-radius: 50%;
+  background-color: #162b4d;
+  animation-name: example;
+  animation-duration: 100s;
+  position: relative;
+}
+
+@keyframes example {
+  0%   {background-color: rgba(3, 3, 54, 0.877);left: 0px;
+    top: 0px;}
+  3%  {background-color: #F3D250;left: -30%;
+    top: 0px;}
+  6%  {background-color: #8D8741;left: -65%;
+    top: 0px;}
+  9% {background-color: #659DBD;left: -30%;
+    top: 0px;}
+  12% {background-color: #DAAD86;left: 0%;
+    top: 0px;}
+  15% {background-color: transparent ;left: 31%;
+      top: 0px;}
+  100% {background-color: transparent ;left: 31%;
+        top: 0px;}  
+      
+}
+
+header nav{
+  flex:1;
+  font-family: none;
+    font-size: 20px;
+}
+
+header nav a{
+
+  padding: 35px 20px 25px 20px;
+  color: white;
+}
+header nav a:hover{
+  background: rgba(240, 243, 240,0.3) /*(цвет,цвет,цвет,прозрачность)*/
+}
+
+
+section{
+  float: left;
+  width: 80%;
+  flex-direction: column;
+  color: #484848
+}
+aside{
+  float: right;
+  width: 18%;
+  margin-right: 20px;
+  color: #484848;
+  line-height: 2;
+}
+
+section article{
+  display: flex;
+    margin: 0 20px 0 20px;
+    flex-wrap: wrap;
+}
+section article img{
+  width: 50%;
+}
+section article img:hover{
+  opacity: 50%;
+}
+section article div{
+  display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 30px 100px 30px 30px;
+    text-align: left;
+    line-height: 3;
+}
+section article div:hover{
+  opacity: 50%;
+}
+.myAmazing {
+  background: #F3D250; 
+}
+.top10 {
+	background: #8D8741;
+}
+.niceMinimalist {
+	background: #659DBD;
+}
+.withAmazing {
+	background: #DAAD86;
+}
+.andAgain{
+  height: 410px;
+  align-content: flex-end;
+  color: #fff;
+}
+
+
+footer{
+  display: flex;
+    width: 97%;
+    background: #162b4d;
+    margin: 10px 20px 0 20px;
+    justify-content: space-between;
+    padding: 5px 10px;
+   
+}
+
+section article:last-child{
+  background: url(../img/post5.jpg);
+  height: 100%;
+  text-align: center;
+  }
+
+  aside article img{
+    width: 100%;
+  }
+
+  aside article div{
+    background: white;
+    padding: 10px;
+}
+
+.lernmore {
+  font-family: sans-serif;
+  padding: 10px;
+  border-style: double;
+  border-radius: 5px;
+}
+
+.lernmore:hover{
+  color: #0745a8;
+  background: white;
+}
+
+@media screen and (max-width: 480px){
+  header,
+  section article img,
+  section article div,
+  .andAgain,
+  aside article img,
+  aside article div,
+  footer {
+    flex-direction: column;
+    width: 480px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  section article:nth-child(2n){
+    flex-direction: column-reverse;
+  }
+
+  body{
+    display: grid;
+  }
+
+}

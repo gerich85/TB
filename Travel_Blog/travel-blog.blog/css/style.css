@@ -1,0 +1,175 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: roboto;
+	background: #0b192f;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	background: #162b4d;
+	margin: 0 20px 20px 20px;
+	padding: 20px;
+  }
+  
+  header article{
+	  display: flex;
+	padding-left: 30px;
+	flex: 2;
+	color: white;
+	font-size: 50px;
+  }
+  
+  .blog{
+	color: rgba(3, 3, 54, 0.877)
+  }
+  
+  .animation {
+	align-self: flex-end;
+	  width: 60px;
+	  height: 60px;
+	  color: #0b192f;
+	  border-radius: 50%;
+	background-color: #162b4d;
+	animation-name: example;
+	animation-duration: 100s;
+	position: relative;
+  }
+  
+  @keyframes example {
+	0%   {background-color: rgba(3, 3, 54, 0.877);left: 0px;
+	  top: 0px;}
+	3%  {background-color: #F3D250;left: -30%;
+	  top: 0px;}
+	6%  {background-color: #8D8741;left: -65%;
+	  top: 0px;}
+	9% {background-color: #659DBD;left: -30%;
+	  top: 0px;}
+	12% {background-color: #DAAD86;left: 0%;
+	  top: 0px;}
+	15% {background-color: transparent ;left: 31%;
+		top: 0px;}
+	100% {background-color: transparent ;left: 31%;
+		  top: 0px;}  
+		
+  }
+
+  header nav{
+	flex:1;
+	font-family: none;
+	  font-size: 20px;
+  }
+  
+  header nav a{
+  
+	padding: 35px 20px 25px 20px;
+	color: white;
+  }
+  header nav a:hover{
+	background: rgba(240, 243, 240,0.3) /*(цвет,цвет,цвет,прозрачность)*/
+  }
+.text {
+	background: url(../img/home-bg.jpg);
+	background-repeat: no-repeat;
+	height: 1000px;
+	background-size: cover;
+	    text-align: center;
+	    color: white;
+	        display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	margin: 20px;
+}
+.text h1{
+	font-size: 70px;
+}
+.text p{
+	color:yellow;
+	font-size: 17px
+}
+.text button{
+	color: gray;
+	font-family: sans-serif;
+    padding: 10px;
+    border-style: double;
+    border-radius: 5px;
+
+}
+
+
+
+.main h2{
+	    text-align: start;
+	}
+
+	span {
+		    display: flex;
+		    
+	}
+
+	span img{
+		height: 35px;
+	border-radius: 50px;
+	margin: 0 10px 0 0;
+	}
+	
+
+	span p{
+		margin:  10px;
+	}
+
+	.main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main article {
+		width: 75%
+	}
+
+	.main article button{
+		color: gray;
+    font-family: sans-serif;
+    padding: 10px;
+    border-style: double;
+    border-radius: 5px;
+	}
+
+	.main article>img{
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	footer{
+	display: flex;
+    background: black;
+    justify-content: center;
+    margin: 20px 20px;
+
+	}
+	footer article h3{
+		color: white;
+	}
+
+	footer article p{
+		color: gray;
+	}
+	footer article{
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	footer section{
+		display: flex;
+		width: 75%
+	}
+
+	.first .second{
+      padding: 20px
+	}
+

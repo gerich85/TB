@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>      
+  <title>Contacts</title>
+</head>
+
+<body class="container">
+    <header>
+        <article><span class="travel">Travel</span><span class="blog">Blog</span></article>
+        <span class='animation'>T|B</span>
+        <nav>
+          <a role="button" href="index.html" target="_blank">Blog</a>
+          <a role="button" href="#" target="_blank">About</a>
+          <a role="button" href="travel-blog.blog/index-blog.html" target="_blank">Archive</a>
+          <a role="button" href="index-contacts.html" target="_blank">Contacts</a>
+        </nav>
+       </header>
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div id="map" style="width:100%;height:500px"></div>
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="Ukraina">Ukraina</option>
+            <option value="Israel">Israel</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <footer>
+        <section>
+        <article class="first">
+            <h3>EBAM LAB</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Copyright 2020</p>
+        </article>
+        <article class="second">
+            <h3>Talk to us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </article>
+    </footer>
+    
+</body>
+
+  <script>
+        function myMap() {
+  var mapOptions = {
+    center: new google.maps.LatLng(29.558476646992734, 34.954654609098384),
+    zoom:9,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOFrhfYqgJv84Av5stA_5UVy2SEymhPg0&callback=myMap"></script>
+</html>

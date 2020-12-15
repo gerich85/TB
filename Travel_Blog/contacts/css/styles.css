@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+      padding: 0;
+    font-family: roboto;
+    background-color: #f2f2f2;
+  }
+  
+  
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #162b4d;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+  }
+  
+  header article{
+    padding-left: 30px;
+    flex: 2;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .blog{
+    color: rgba(3, 3, 54, 0.877)
+  }
+  
+  .animation {
+    align-self: flex-end;
+      width: 60px;
+      height: 60px;
+      color: #0b192f;
+      border-radius: 50%;
+    background-color: #162b4d;
+    animation-name: example;
+    animation-duration: 100s;
+    position: relative;
+  }
+  
+  @keyframes example {
+    0%   {background-color: rgba(3, 3, 54, 0.877);left: 0px;
+      top: 0px;}
+    3%  {background-color: #F3D250;left: -30%;
+      top: 0px;}
+    6%  {background-color: #8D8741;left: -65%;
+      top: 0px;}
+    9% {background-color: #659DBD;left: -30%;
+      top: 0px;}
+    12% {background-color: #DAAD86;left: 0%;
+      top: 0px;}
+    15% {background-color: transparent ;left: 31%;
+        top: 0px;}
+    100% {background-color: transparent ;left: 31%;
+          top: 0px;}  
+        
+  }
+  
+  header nav{
+    flex:1;
+    font-family: none;
+      font-size: 20px;
+  }
+  
+  header nav a{
+  
+    padding: 35px 20px 25px 20px;
+    color: white;
+  }
+  header nav a:hover{
+    background: rgba(240, 243, 240,0.3) /*(цвет,цвет,цвет,прозрачность)*/
+  }
+  
+  *{
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #162b4d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #737dd6;
+}
+
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+	display: flex;
+    background: #162b4d;
+    justify-content: center;
+    margin: 20px 20px;
+
+	}
+	footer article h3{
+		color: white;
+	}
+
+	footer article p{
+		color: gray;
+	}
+	footer article{
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	footer section{
+		display: flex;
+		width: 75%
+	}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

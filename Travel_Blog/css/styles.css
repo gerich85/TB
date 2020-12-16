@@ -166,26 +166,74 @@ section article:last-child{
 }
 
 @media screen and (max-width: 480px){
+
+  body{
+    display: grid;
+  }
   header,
+  section,
+  section article,
   section article img,
-  section article div,
-  .andAgain,
-  aside article img,
-  aside article div,
+  aside,
+  section article:last-child,
   footer {
     flex-direction: column;
-    width: 480px;
+    width: 100%;
+    height: auto;
     padding: 0;
     margin: 0;
+    background-repeat: round;
+  }
+
+  nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+  
+
+  section article div{
+    line-height: 1.5;
+    padding: 30px
   }
   
   section article:nth-child(2n){
     flex-direction: column-reverse;
   }
 
-  body{
-    display: grid;
+  aside{
+    margin: 100px 0;
   }
+
+  footer{
+    flex-direction: row;
+    font-size: small;
+  }
+
+  footer p{
+    padding: 0 10px;
+  }
+
+  @keyframes example {
+    0%   {background-color: rgba(3, 3, 54, 0.877);left: 0px;
+      top: 0px;}
+    3%  {background-color: #F3D250;left: -30%;
+      top: 0px;}
+    6%  {background-color: #8D8741;left: -75%;
+      top: 0px;}
+    9% {background-color: #659DBD;left: -55%;
+      top: 0px;}
+    12% {background-color: #DAAD86;left: -25%;
+      top: 0px;}
+    15% {background-color: transparent ;left: -10%;
+        top: 0px;}
+    100% {background-color: transparent ;left: 0%;
+          top: 0px;}  
+        
+  }
+
+
+
 
 }
 
